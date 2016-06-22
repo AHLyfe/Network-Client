@@ -1,2 +1,2 @@
-# Networked-Game
-2D client-server game
+# Client
+Client for server
