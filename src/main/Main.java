@@ -1,5 +1,11 @@
 package main;
 
-public class Main {
+import server.MPServer;
 
+public class Main {
+	static MPServer server;
+	
+	public static void main(String[] args){
+		server = new MPServer();
+	}
 }
