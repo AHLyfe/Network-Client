@@ -3,6 +3,7 @@ package network;
 import com.esotericsoftware.kryonet.Connection;
 import com.esotericsoftware.kryonet.Listener;
 
+import network.packet.ClientUpdate;
 import network.packet.LoginRequest;
 import network.packet.LoginResponse;
 
@@ -31,6 +32,9 @@ public class ClientListener extends Listener{
 			LoginResponse response = (LoginResponse) obj;
 			
 			System.out.println(response.getResponseText());
+		}
+		else if (obj instanceof ClientUpdate){
+			
 		}
 	}
 }
